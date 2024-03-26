@@ -1,0 +1,62 @@
+.blockHeader {
+    width: 100%;
+    margin-bottom: 50px;
+
+    .title_h2 {
+        font-size: 1.2rem;
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    input {
+        color: var(--c950);
+    }
+
+    .secct_div {
+        display: flex;
+        // flex-direction: column;
+        gap: 50px;
+
+        input {
+            color: var(--c950);
+        }
+
+        .g_pass {
+            width: 80%;
+            height: 40px;
+            color: var(--c50);
+            background: var(--c500);
+            border-radius: 8px;
+            box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
+
+            &:hover {
+                background: var(--c600);
+            }
+        }
+
+
+    }
+
+    .cntButtons {
+        display: flex;
+        gap: 15px;
+
+        .btn_submit {
+            background: var(--c500);
+            color: var(--c50);
+
+            &:hover::before {
+                background: #008000;
+            }
+        }
+
+        .btn_cancel {
+            background: var(--c900);
+            color: var(--c50);
+        }
+    }
+}

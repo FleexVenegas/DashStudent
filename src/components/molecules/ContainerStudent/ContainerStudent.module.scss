@@ -1,0 +1,29 @@
+.ContainerStudent {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+
+    .inside_cnt {
+        width: 50%;
+        background: var(--c50);
+        padding: 50px;
+        border-radius: 30px;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+        opacity: 0;
+        transition: all 0.5s;
+
+        &.opacityModal {
+            opacity: 1;
+        }
+    }
+
+}

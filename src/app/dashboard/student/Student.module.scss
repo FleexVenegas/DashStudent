@@ -1,0 +1,100 @@
+.Student {
+    width: 100%;
+    min-height: 80vh;
+    padding: 25px;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+
+    @media (min-width: 1900px) and (max-width: 2600px) {
+        height: 80vh;
+    }
+
+    .student_layer2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        // height: 100vh;
+
+        .cnt_button {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 30px;
+
+            .btn_spin {
+                position: relative;
+
+                &:hover {
+                    .span_update {
+                        display: flex;
+                    }
+
+                }
+
+                .btn_update {
+                    border: none;
+                    outline: none;
+                    background: transparent;
+                    cursor: pointer;
+                    transition: all 0.5s;
+
+                    .img_ {
+                        &:hover {
+                            animation: spin 2s infinite;
+                        }
+                    }
+
+
+                }
+
+                .span_update {
+                    display: none;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    top: -30px;
+                    width: 129px;
+                    background: var(--c200);
+                    border-radius: 8px;
+                    cursor: pointer;
+                    text-align: center;
+                    padding: 5px;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+
+
+                }
+
+            }
+
+
+            .classInput {
+                width: 235px;
+            }
+
+            .bnt_create {
+                width: 200px;
+            }
+
+        }
+
+    }
+
+    .cntDatas {
+        width: 100%;
+    }
+}
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

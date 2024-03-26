@@ -1,0 +1,169 @@
+.Cnt_table {
+    width: 100%;
+    // height: 400px;
+    position: relative;
+
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        background: transparent;
+
+        .thead {
+            text-align: left;
+            height: 60px;
+            width: 100%;
+            background: #fff;
+
+            .tr {
+                width: 100%;
+                text-align: left;
+                border-radius: 10px 0;
+
+
+                .th {
+                    font-weight: 500;
+                    font-size: var(--size-paragraph);
+                    padding: 0 8px;
+                    color: var(--c950);
+
+                    &:nth-child(1) {
+                        border-top-left-radius: 10px;
+                    }
+                }
+
+                .actionts_ {
+                    border-top-right-radius: 10px;
+                    font-weight: 500;
+                    font-size: 1.1rem;
+                    padding: 0 8px;
+                    user-select: none;
+
+                }
+            }
+
+        }
+
+        .tbody {
+            .tr {
+                height: 50px;
+                transition: all 0.3s;
+                border-bottom: 1px solid var(--c200);
+
+                &:hover {
+                    font-weight: 400;
+                    cursor: pointer;
+                    color: var(--c50);
+                    background: var(--c300);
+
+                }
+
+                .td {
+                    padding: 0 8px;
+                    font-size: var(--size-paragraph);
+                    text-align: left;
+
+                    span {
+                        text-align: center;
+                        color: var(--c950);
+                    }
+
+                }
+
+                .action_body {
+                    padding: 0 8px;
+                    font-size: 1rem;
+                    text-align: left;
+                    user-select: none;
+
+                    .cnt_images {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        gap: 15px;
+
+                        img {
+                            width: 20px;
+                            height: 20px;
+                            -webkit-filter: invert(12%) sepia(10%) saturate(2097%) hue-rotate(159deg) brightness(95%) contrast(90%);
+                            filter: invert(12%) sepia(10%) saturate(2097%) hue-rotate(159deg) brightness(95%) contrast(90%);
+                            transition: all 0.5s;
+
+                            &:hover {
+                                transform: scale(1.2);
+                            }
+                        }
+                    }
+
+
+
+                }
+            }
+        }
+    }
+
+    .cnt_controlls {
+        margin-top: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        user-select: none;
+
+        .cnt_spans {
+            display: flex;
+            gap: 40px;
+
+            span {
+                font-size: 1.1rem;
+                color: var(--c900);
+                font-weight: 400;
+            }
+        }
+
+        .cnt_btns {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+
+            .bnt_controls {
+                width: 180px;
+                height: 40px;
+                border-radius: 7px;
+                color: var(--c900);
+                font-weight: bold;
+                background: var(--c200);
+                transition: all 0.5s;
+                opacity: 1;
+                user-select: none;
+
+                &.btn_prev_hidden {
+                    pointer-events: none;
+                    opacity: 0.2;
+                }
+
+                &.btn_next_hidden {
+                    pointer-events: none;
+                    opacity: 0.2;
+
+                }
+            }
+        }
+    }
+
+
+}
+
+
+
+
+
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}

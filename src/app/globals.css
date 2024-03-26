@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --cian-azul: #111b21;
+    --size-h1: 30px;
+    --size-paragraph: 18px;
+    --white: #ffffff;
+    --black: #000000;
+    --c50: #f2f8f9;
+    --c100: #ddecf0;
+    --c200: #bfdbe2;
+    --c300: #93c2cd;
+    --c400: #5f9fb1;    
+    --c500: #448396;
+    --c600: #3b6c7f;
+    --c700: #355a69;
+    --c800: #324c58;
+    --c900: #2d414c;
+    --c950: #1a2932;
+
+    --c800RGBA: rgba(59, 108, 127, 0.5);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #7f7f7f;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 3px;
+    height: 8px;
+}
+
+@media screen and (max-width: 1000px) {
+    *::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+body.noScrollBar::-webkit-scrollbar {
+    display: none;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #7f7f7f;
+    border-radius: 10px;
+    border: 0 solid #ffffff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--c900);
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.Main_ {
+    /* @media (min-width: 1900px) and (max-width: 2600px) {
+        padding: 0 20%;
+    } */
+}

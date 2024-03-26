@@ -1,0 +1,22 @@
+.Dashboard {
+    width: 100%;
+    // height: 100vh;
+    padding: 25px;
+    // background: var(--c100);
+
+    .main_dash {
+        width: 100%;
+
+        .exp_dash {
+            margin-top: 40px;
+            display: flex;
+            gap: 30px;
+
+        }
+
+        .cnt_chart {
+            margin-top: 50px;
+            width: 100%;
+        }
+    }
+}

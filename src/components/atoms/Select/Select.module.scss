@@ -1,0 +1,96 @@
+.Select {
+    width: 100%;
+    position: relative;
+
+    .text_input {
+        font-size: 1.2rem;
+        position: absolute;
+        top: 50%;
+        left: 9px;
+        transition: all 0.5s;
+        transform: translate(0, -50%);
+        color: #2d414c;
+        font-weight: bold;
+
+        &.move_text {
+            top: -13px;
+        }
+    }
+
+    .cntSelect {
+        width: 100%;
+        position: relative;
+
+        .select_ {
+            border: none;
+            outline: none;
+            border-bottom: 2px solid #2d414c;
+            background: transparent;
+            height: 40px;
+            width: 100%;
+            font-size: 1.2rem;
+            padding: 0 10px;
+            color: #1a2931;
+            cursor: pointer;
+        }
+
+        .btn_arrow {
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            right: 10px;
+            color: #1a2931;
+            font-weight: bold;
+            border: none;
+            outline: none;
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.5s;
+        }
+
+        .cntOptions {
+            width: 100%;
+            height: 0;
+            position: absolute;
+            z-index: 2;
+            top: 42px;
+            left: 0;
+            background: #fff;
+            border-radius: 10px;
+            // border: 1px solid #1a2931;
+            box-shadow: 2px 4px 5px #1a2931;
+            // padding: 20px 0;
+            transition: all 0.5s;
+            overflow: hidden;
+            pointer-events: none;
+
+            &.showOptions {
+                padding: 10px 0;
+                pointer-events: all;
+                height: 140px;
+                top: 42px;
+            }
+
+            .cntUl {
+                display: flex;
+                flex-direction: column;
+
+                .opt_li {
+                    padding: 0 20px;
+                    font-size: 1.2rem;
+                    height: 40px;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    transition: all 0.3s;
+
+                    &:hover {
+                        color: #fff;
+                        font-weight: bold;
+                        background: #93c2cd;
+                    }
+                }
+            }
+        }
+    }
+}

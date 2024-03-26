@@ -1,0 +1,45 @@
+.Cnt_Input {
+    width: 100%;
+    position: relative;
+
+    .text_input {
+        font-size: 1.2rem;
+        position: absolute;
+        top: 50%;
+        left: 9px;
+        transition: all 0.5s;
+        transform: translate(0, -50%);
+        color: #2d414c;
+        font-weight: bold;
+
+        &.move_text {
+            top: -13px;
+        }
+    }
+
+    .cnt_input_pass {
+        width: 100%;
+        position: relative;
+
+        .input {
+            border: none;
+            outline: none;
+            border-bottom: 2px solid #2d414c;
+            background: transparent;
+            height: 40px;
+            width: 100%;
+            font-size: 1.2rem;
+            padding: 0 10px;
+            color: #1a2931;
+
+        }
+
+        .img_ {
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            cursor: pointer;
+            transform: translate(0, -50%);
+        }
+    }
+}
